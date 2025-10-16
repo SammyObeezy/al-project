@@ -18,9 +18,15 @@ codeunit 50101 "Calculator Service"
         exit(Number1 * Number2);
     end;
 
-    procedure Division(Number1: Integer; Number2: Integer): Integer
+    procedure Division(Number1: Integer; Divisor: Integer): Integer
     begin
-        // Divide Number by Number2
-        exit(Number1 / Number2);
+        // Divide Number by Divisor
+        exit(Number1 / Divisor);
+    end;
+
+    procedure Modulus(Number1: Integer; Divisor: Integer): Integer
+    begin
+        // Remainder of dividing Number1 by Divisor
+        exit(Number1 mod Divisor);
     end;
 }
